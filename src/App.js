@@ -23,6 +23,7 @@ class Muda extends Component{
         estado='Apagar'
         lampada='acesa'
         document.getElementById('chao').style.background='yellow';
+        document.getElementById('botao').style.background='red';
         var maxnumber  = 9;
         var randomnumber = Math.floor((Math.random()*maxnumber));
         if(randomnumber === 0){
@@ -34,7 +35,8 @@ class Muda extends Component{
       }else{
         estado='Acender'
         lampada='apagada'   
-        document.getElementById('chao').style.background='black'; 
+        document.getElementById('chao').style.background='black';
+        document.getElementById('botao').style.background='green'; 
       }     
       this.setState({
         estado:estado,

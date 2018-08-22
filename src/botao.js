@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Botao = ({estado, onClick , boolean})=>(
-<button disabled={boolean} onClick={onClick}>{estado}</button>
+<button id={'botao'} disabled={boolean} onClick={onClick}>{estado}</button>
 )
 
 export default Botao
